@@ -1,0 +1,165 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.jurassicpark
+{
+	height: 100vh;
+	width: 100%;
+	background-image: url(background.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow-x: hidden;
+}
+.highway
+{
+	height: 200px;
+	width: 500%;
+	display: block;
+	background-image: url(road.jpg);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: highway 5s linear infinite;
+}
+@keyframes highway
+{
+	100%{
+		transform: translateX(-3400px);
+	}
+}
+
+.jeep
+{
+	width: 500px;
+	left: 59%;
+	bottom: 0px;
+	transform: translateX(-50%);
+	transform: translateY(10%);
+	position: absolute;
+	z-index: 2;
+}
+.jeep img
+{
+	width: 120%;
+	animation: jeep 1s linear infinite;
+}
+@keyframes jeep
+{
+	100%{
+		transform: translateY(-10px);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	0%{
+		transform: translateY(-10px);
+	}
+}
+.wheel
+{
+	left: 71%;
+	bottom: 230px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+.wheel img
+{
+	height: 120px;
+	width: 120px;
+	animation: wheel 1s linear infinite;
+}
+.back-wheel
+{
+	left: -135px;
+	position: absolute;
+}
+.front-wheel
+{
+	left: 195px;
+	position: absolute;
+}
+@keyframes wheel
+{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.trex
+{
+	left: 0%;
+	bottom: 30px;
+	transform: translateX(-50%);
+	transform: translateY(-10%);
+	position: absolute;
+	z-index: 2;
+}
+
+.skate-wheel
+{
+	left: 50%;
+	bottom: 230px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+.skate-wheel img
+{
+	height: 50px;
+	width: 50px;
+	animation: wheel 1s linear infinite;
+}
+.skate1
+{
+	left: -575px;
+	bottom: -200px;
+	position: absolute;
+}
+.skate2
+{
+	left: -525px;
+	bottom: -200px;
+	position: absolute;
+}
+.skate3
+{
+	left: -475px;
+	bottom: -200px;
+	position: absolute;
+}
+.skate4
+{
+	left: -425px;
+	bottom: -200px;
+	position: absolute;
+}
+.skate5
+{
+	left: -375px;
+	bottom: -200px;
+	position: absolute;
+}
+.skate6
+{
+	left: -325px;
+	bottom: -200px;
+	position: absolute;
+}
+@keyframes skate-wheel
+{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
